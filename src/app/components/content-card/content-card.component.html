@@ -1,0 +1,29 @@
+<div *ngIf="direction == 'left'; then leftBlock else rightBlock"></div>
+
+<ng-template #leftBlock>
+  <div class="content-card">
+    <div class="content-card__box">
+      <div class="content-card__img">
+        <img [src]="imgSrc" alt="Book Picture">
+      </div>
+    </div>
+    <div class="content-card__content">
+      <p class="content-card__title">{{title}}</p>
+      <p class="content-card__text">{{text}}</p>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #rightBlock>
+  <div class="content-card">
+    <div class="content-card__content">
+      <p class="content-card__title">{{title}}</p>
+      <p class="content-card__text">{{text}}</p>
+    </div>
+    <div class="content-card__box">
+      <div class="content-card__img">
+        <img [src]="imgSrc" alt="Book Picture">
+      </div>
+    </div>
+  </div>
+</ng-template>

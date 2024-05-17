@@ -1,0 +1,42 @@
+.content-card {
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 350px;
+  background: #F4ECDC;
+}
+
+.content-card__box {
+  width: 50%;
+  height: 100%;
+}
+
+.content-card__img {
+  width: 100%;
+  height: auto;
+}
+
+.content-card__img img {
+  width: 100%;
+  height: 100%;
+}
+
+.content-card__content {
+  box-sizing: border-box;
+  padding: 15px;
+  height: 100%;
+  width: 50%;
+  background: #F3EBDB;
+}
+
+.content-card__title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.content-card__text {
+  line-height: 1.5;
+}
