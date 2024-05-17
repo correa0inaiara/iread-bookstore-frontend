@@ -20,4 +20,14 @@ describe('FooterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have the footer element', () => {
+    const compile = fixture.debugElement.nativeElement
+    expect(compile.querySelector('footer')).toBeTruthy()
+    expect(compile.querySelector('p')).toBeTruthy()
+  })
+
+  it('should have the footer prop defined', () => {
+    expect(component.footer).toBeTruthy()
+  })
 });

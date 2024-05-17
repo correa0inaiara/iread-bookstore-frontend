@@ -20,4 +20,16 @@ describe('ContentCardComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have inputs declared', () => {
+    expect(component.imgSrc).toBeDefined()
+    expect(component.direction).toBeDefined()
+    expect(component.title).toBeDefined()
+    expect(component.text).toBeDefined()
+  })
+
+  it('should have direction predefined', () => {
+    expect(component.direction).toBeTruthy()
+    expect(component.direction).toEqual('left')
+  })
 });

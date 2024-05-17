@@ -9,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   header = 'Book Store'
+  imgSrc = '../../../assets/images/Book Store.png'
 }

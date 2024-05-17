@@ -20,4 +20,16 @@ describe('HeaderComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have the header element with title and image', () => {
+    const compile = fixture.debugElement.nativeElement
+    expect(compile.querySelector('header')).toBeTruthy()
+    expect(compile.querySelector('p')).toBeTruthy()
+    expect(compile.querySelector('img')).toBeTruthy()
+  })
+
+  it('should have the title and the imgSrc props', () => {
+    expect(component.header).toBeTruthy()
+    expect(component.imgSrc).toBeTruthy()
+  })
 });

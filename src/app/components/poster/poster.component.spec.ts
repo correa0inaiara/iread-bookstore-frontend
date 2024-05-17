@@ -20,4 +20,15 @@ describe('PosterComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('should have the div and img elements', () => {
+    const compile = fixture.debugElement.nativeElement
+    expect(compile.querySelector('div')).toBeTruthy()
+    expect(compile.querySelector('img')).toBeTruthy()
+  })
+
+  it('should have the imgSrc and the altText props defined', () => {
+    expect(component.imgSrc).toBeDefined()
+    expect(component.imgSrc).toBeDefined()
+  })
 });
