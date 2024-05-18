@@ -1,5 +1,5 @@
 services:
-  web:
+  frontend:
     build: .
     ports:
       - "4200:4200"
